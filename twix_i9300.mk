@@ -13,21 +13,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit Omni GSM telephony parts
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit Twix GSM telephony parts
+$(call inherit-product, vendor/twixkat/configs/gsm.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from our omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from our Twix product configuration
+$(call inherit-product, vendor/twixkat/configs/common.mk)
 
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := omni_i9300
+PRODUCT_NAME := twix_i9300
 PRODUCT_DEVICE := i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung
@@ -37,8 +37,8 @@ PRODUCT_MODEL := GT-I9300
 # This is required to solve some apps being incompatible with our device
 # Values should be equal to newest Sammy's stock release, or adapted to Omni
 # Currently they're stock, but we may want to change them in the future, such as:
-# BUILD_FINGERPRINT="samsung/m0xx/m0:4.4.2/KVT49L/I9300OMNI:user/release-keys"
-# PRIVATE_BUILD_DESC="m0xx-user 4.4.2 KVT49L I9300OMNI release-keys"
+# BUILD_FINGERPRINT="samsung/m0xx/m0:4.4.2/KVT49L/I9300TWIX:user/release-keys"
+# PRIVATE_BUILD_DESC="m0xx-user 4.4.2 KVT49L I9300TWIX release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="samsung/m0xx/m0:4.3/JSS15J/I9300XXUGNA7:user/release-keys" \
     PRIVATE_BUILD_DESC="m0xx-user 4.3 JSS15J I9300XXUGNA7 release-keys" \
