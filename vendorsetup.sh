@@ -1,2 +1,2 @@
 add_lunch_combo full_i9300-userdebug
-add_lunch_combo twix_i9300-userdebug
+add_lunch_combo hazy_i9300-userdebug

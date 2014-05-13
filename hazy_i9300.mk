@@ -1,3 +1,4 @@
+# Copyright (C) 2014 Hazy Project
 # Copyright (C) 2013 OmniROM Project
 # Copyright (C) 2012 The CyanogenMod Project
 #
@@ -13,13 +14,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit Twix GSM telephony parts
+# Inherit Hazy GSM telephony parts
 $(call inherit-product, vendor/twixkat/configs/gsm.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from our Twix product configuration
+# Inherit from our Hazy product configuration
 $(call inherit-product, vendor/twixkat/configs/common.mk)
 
 # This is where we'd set a backup provider if we had one
@@ -27,7 +28,7 @@ $(call inherit-product, vendor/twixkat/configs/common.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := twix_i9300
+PRODUCT_NAME := hazy_i9300
 PRODUCT_DEVICE := i9300
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := Samsung

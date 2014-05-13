@@ -16,4 +16,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_i9300.mk \
-    $(LOCAL_DIR)/twix_i9300.mk
+    $(LOCAL_DIR)/hazy_i9300.mk
