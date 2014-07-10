@@ -14,7 +14,7 @@
   {
     "remote": "github",
     "repository": "HazyTeam/android_vendor_samsung_i9300",
-    "target_path": "vendor/samsung/i9300,
+    "target_path": "vendor/samsung/i9300",
     "revision": "kitkat"
   },
   {
