@@ -7,7 +7,7 @@
   },
   {
     "remote": "github",
-    "repository": "KylinRom/android_kernel_samsung_smdk4412",
+    "repository": "HazyTeam/android_kernel_samsung_smdk4412",
     "target_path": "kernel/samsung/smdk4412",
     "revision": "kitkat"
   },
