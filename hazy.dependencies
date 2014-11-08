@@ -1,20 +1,26 @@
 [
   {
-    "remote": "omnirom",
-    "repository": "android_packages_apps_SamsungServiceMode",
+    "remote": "github",
+    "repository": "HazyTeam/android_packages_apps_SamsungServiceMode",
     "target_path": "packages/apps/SamsungServiceMode",
-    "revision": "android-4.4"
+    "revision": "hazypop"
+  },
+  {
+    "remote": "github",
+    "repository": "HazyTeam/android_hardware_samsung",
+    "target_path": "hardware/samsung",
+    "revision": "hazypop"
   },
   {
     "remote": "github",
     "repository": "HazyTeam/android_kernel_samsung_smdk4412",
     "target_path": "kernel/samsung/smdk4412",
-    "revision": "kitkat"
+    "revision": "hazypop"
   },
   {
     "remote": "github",
     "repository": "HazyTeam/proprietary_vendor_samsung",
     "target_path": "vendor/samsung",
-    "revision": "kitkat"
+    "revision": "hazypop"
   }
 ]

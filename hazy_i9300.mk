@@ -15,20 +15,20 @@
 # limitations under the License.
 
 # Inherit Hazy GSM telephony parts
-$(call inherit-product, vendor/twixkat/configs/gsm.mk)
+$(call inherit-product, vendor/hazy/configs/gsm.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our Hazy product configuration
-$(call inherit-product, vendor/twixkat/configs/common.mk)
+$(call inherit-product, vendor/hazy/configs/common.mk)
 
 # This is where we'd set a backup provider if we had one
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
 
 # Inherit from our Hazy vendor product
-$(call inherit-product, vendor/twixkat/device-partial.mk)
+$(call inherit-product, vendor/hazy/device-partial.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := hazy_i9300
