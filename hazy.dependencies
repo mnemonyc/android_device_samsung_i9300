@@ -7,15 +7,21 @@
   },
   {
     "remote": "github",
-    "repository": "HazyTeam/android_hardware_samsung",
+    "repository": "NamelessRom/android_hardware_samsung",
     "target_path": "hardware/samsung",
-    "revision": "hazypop"
+    "revision": "android-4.4"
   },
   {
     "remote": "github",
-    "repository": "HazyTeam/android_kernel_samsung_smdk4412",
+    "repository": "NamelessRom/android_hardware_samsung_slsi_exynos4",
+    "target_path": "hardware/samsung_slsi/exynos4",
+    "revision": "android-4.4"
+  },
+  {
+    "remote": "github",
+    "repository": "ArchiDroid/android_kernel_samsung_smdk4412",
     "target_path": "kernel/samsung/smdk4412",
-    "revision": "hazypop"
+    "revision": "cm-12.0"
   },
   {
     "remote": "github",

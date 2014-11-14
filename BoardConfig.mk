@@ -35,7 +35,7 @@ TARGET_KERNEL_CONFIG := custom_i9300_defconfig
 TARGET_RECOVERY_FSTAB := device/samsung/i9300/rootdir/fstab.smdk4x12
 RECOVERY_FSTAB_VERSION := 2
 
-# Selinux
+ Selinux
 BOARD_SEPOLICY_DIRS := \
     device/samsung/i9300/selinux
 
