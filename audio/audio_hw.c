@@ -3023,6 +3023,10 @@ static int adev_open(const hw_module_t* module, const char* name,
         return -EINVAL;
     }
 
+    /* +30db boost for mics */
+    adev->mixer_ctls.mixinl_in1l_volume = mixer_get_ctl_by_name(adev->mixer, "MIXINL IN1L Volume");
+    adev->mixer_ctls.mixinl_in2l_volume = mixer_get_ctl_by_name(adev->mixer, "MIXINL IN2L Volume");
+
     ret = adev_config_parse(adev);
     if (ret != 0)
         goto err_mixer;
