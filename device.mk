@@ -38,9 +38,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/tiny_hw.xml:system/etc/sound/m0
 
-# Camera Wrapper
+# Camera
 PRODUCT_PACKAGES += \
-    vendor-camera.smdk4x12
+    camera.smdk4x12
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -54,6 +54,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libsecril-client \
     libsecril-client-sap \
+    SamsungServiceMode \
     tinyplay
 
 # NFC
@@ -81,6 +82,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras
+
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \

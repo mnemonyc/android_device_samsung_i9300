@@ -18,10 +18,8 @@
 -->
 
 <!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds.  Do not translate. -->
+     for different hardware and product builds. -->
 <resources>
-    <!-- XXXXX NOTE THE FOLLOWING RESOURCES USE THE WRONG NAMING CONVENTION.
-         Please don't copy them, copy anything else. -->
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
@@ -153,11 +151,8 @@
         <item>"wifi_p2p,13,1,0,-1,true"</item>
     </string-array>
 
-    <!-- This string array should be overridden by the device to present a list of radio
-         attributes.  This is used by the connectivity manager to decide which networks can coexist
-         based on the hardware -->
     <!-- An Array of "[ConnectivityManager connectionType],
-                      [# simultaneous connection types]"  -->
+         [# simultaneous connection types]"  -->
     <string-array translatable="false" name="radioAttributes">
         <item>"1,1"</item>
         <item>"0,1"</item>
@@ -181,9 +176,6 @@
         <item>7</item>
     </integer-array>
 
-    <!-- If this is true, key chords can be used to take a screen record on the device.
-    <bool name="config_enableScreenrecordChord">false</bool> -->
-
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">true</bool>
 
@@ -205,7 +197,7 @@
     <!-- Disable the home key unlock setting -->
     <!--bool name="config_disableHomeUnlockSetting">false</bool-->
 
-    <!-- Boolean to enable stk functionality on Samsung phones -->
+    <!-- Boolean to enable stk functionality on Samsung phones-->
 	<bool name="config_samsung_stk">true</bool>
 
     <!-- Hardware 'face' keys present on the device, stored as a bit field.
@@ -218,16 +210,11 @@
             16 - App switch
             32 - Camera
          For example, a device with Home, Back and Menu keys would set this
-         config to 7.  -->
+         config to 7. -->
     <integer name="config_deviceHardwareKeys">7</integer>
 
-    <!-- <bool name="config_intrusiveNotificationLed">true</bool> -->
-
-    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option
-    <bool name="config_intrusiveBatteryLed">true</bool> -->
-
-    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors
-    <bool name="config_multiColorBatteryLed">true</bool> -->
+    <!-- Is the device LTE capable -->
+    <bool name="config_lte_capable">false</bool>
 
     <!-- Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
