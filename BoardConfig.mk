@@ -50,15 +50,12 @@ RECOVERY_FSTAB_VERSION := 2
 #    init.te \
 #    mediaserver.te \
 #    rild.te \
-#    ueventd.te
+#    system.te \
+#    ueventd.te \
+#    wpa_supplicant.te
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := m0,i9300,GT-I9300
-
-BOARD_USES_LEGACY_MMAP := true
-
-# Include an expanded selection of fonts
-EXTENDED_FONT_FOOTPRINT := true
 
 # own headers
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/i9300/include

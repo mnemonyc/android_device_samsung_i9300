@@ -422,6 +422,26 @@ typedef uint8_t GpsNavigationMessageType;
  */
 #define AGPS_USE_PSC
 
+/**
+ * Name for the GPS_Geofencing interface.
+ */
+#define GPS_GEOFENCING_INTERFACE   "gps_geofencing"
+
+/**
+ * Name of the GPS Measurements interface.
+ */
+#define GPS_MEASUREMENT_INTERFACE   "gps_measurement"
+
+/**
+ * Name of the GPS navigation message interface.
+ */
+#define GPS_NAVIGATION_MESSAGE_INTERFACE     "gps_navigation_message"
+
+/**
+ * Name of the GNSS/GPS configuration interface.
+ */
+#define GNSS_CONFIGURATION_INTERFACE     "gnss_configuration"
+
 
 /** Represents a location. */
 typedef struct {
@@ -501,6 +521,7 @@ typedef struct {
      */
     uint32_t    used_in_fix_mask;
 } GpsSvStatus;
+
 
 /* 2G and 3G */
 /* In 3G lac is discarded */
