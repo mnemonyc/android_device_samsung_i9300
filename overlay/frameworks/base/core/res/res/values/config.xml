@@ -22,8 +22,8 @@
 <resources>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration.
-    <bool name="config_showNavigationBar">false</bool> -->
+         autodetected from the Configuration. -->
+    <bool name="config_showNavigationBar">false</bool>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
         The N entries of this array define N + 1 zones as follows:
@@ -32,8 +32,7 @@
         ...
         Zone N: array[N - 1] <= LUX < array[N]
         Zone N + 1: array[N] <= LUX < infinity
-        Must be overridden in platform specific overlays
-    -->
+        Must be overridden in platform specific overlays-->
     <integer-array name="config_autoBrightnessLevels">
         <item>150</item>
         <item>300</item>
