@@ -27,6 +27,9 @@ $(call inherit-product, vendor/hazy/configs/common.mk)
 #$(call inherit-product, device/sample/products/backup_overlay.mk)
 $(call inherit-product, device/samsung/i9300/device.mk)
 
+# Inherit from our Hazy vendor product
+$(call inherit-product, vendor/hazy/device-partial.mk)
+
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := hazy_i9300
 PRODUCT_DEVICE := i9300
